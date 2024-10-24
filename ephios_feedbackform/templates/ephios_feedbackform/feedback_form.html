@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load crispy_forms_filters %}
+{% load i18n %}
+
+{% block content %}
+    <div class="page-header">
+        <h2>{% translate "Feedback" %}</h2>
+    </div>
+
+    <p>
+        {% blocktranslate trimmed %}
+            Did you experience problems or do you have suggestions for improvement?
+            Please provide feedback on your experience with ephios.
+            This helps us to improve the software and provide better support.
+        {% endblocktranslate %}
+    </p>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <input type="submit" class="btn btn-primary" value="{% translate "Submit" %}">
+    </form>
+{% endblock %}

@@ -1,0 +1,69 @@
+# ephios_feedbackform
+# Copyright (C) 2024 ephios
+# This file is distributed under the same license as the ephios_feedbackform package.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-24 23:21+0200\n"
+"Last-Translator: Julian Baumann <julian@ephios.de>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\ephios_feedbackform\forms.py:7
+msgid ""
+"Checking this box allows us to see who the feedback is from. This makes it "
+"possible for us to follow up with you if we have any questions. If you do "
+"not check this box, the feedback will be anonymous."
+msgstr ""
+"Wenn Sie dieses Option aktivieren, können wir sehen, von wem das Feedback "
+"stammt.  So können wir uns mit Ihnen in Verbindung setzen, wenn wir Fragen "
+"haben. Andernfalls bleibt das Feedback anonym."
+
+#: .\ephios_feedbackform\signals.py:9
+#: .\ephios_feedbackform\templates\ephios_feedbackform\feedback_form.html:7
+#: .\ephios_feedbackform\views.py:28
+msgid "Feedback"
+msgstr "Feedback"
+
+#: .\ephios_feedbackform\templates\ephios_feedbackform\feedback_form.html:11
+msgid ""
+"Did you experience problems or do you have suggestions for improvement? "
+"Please provide feedback on your experience with ephios. This helps us to "
+"improve the software and provide better support."
+msgstr ""
+"Hatten Sie Probleme oder haben Sie Verbesserungsvorschläge? Bitte geben Sie "
+"uns Feedback zu Ihrer Erfahrung mit ephios. Dies hilft uns, die Software zu "
+"verbessern und besseren Support zu bieten."
+
+#: .\ephios_feedbackform\templates\ephios_feedbackform\feedback_form.html:21
+msgid "Submit"
+msgstr "Abschicken"
+
+#: .\ephios_feedbackform\views.py:16
+msgid "Feedback submitted successfully. Thanks for your help!"
+msgstr "Feedback erfolgreich übermittelt. Vielen Dank für Ihre Unterstützung!"
+
+#: .\ephios_feedbackform\views.py:24
+#, python-brace-format
+msgid ""
+"\n"
+"\n"
+"submitted by: {user} ({email}) at {site}"
+msgstr ""
+"\n"
+"\n"
+"übermittelt von: {user} ({email}) auf {site}"
+
+#: .\ephios_feedbackform\views.py:24
+msgid "anonymous"
+msgstr "anonym"
+
+#: .\ephios_feedbackform\views.py:25
+msgid "Path: "
+msgstr "Pfad: "
