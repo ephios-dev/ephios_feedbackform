@@ -6,4 +6,4 @@ from ephios.core.signals import footer_link
 
 @receiver(footer_link, dispatch_uid="ephios.plugins.files.signals.nav_link")
 def add_footer_link(sender, request, **kwargs):
-    return {_("Feedback"): reverse_lazy("ephios_feedbackform:feedback")}
+    return {_("Feedback"): reverse_lazy("ephios_feedbackform:feedback") + "?from=" + request.path}
