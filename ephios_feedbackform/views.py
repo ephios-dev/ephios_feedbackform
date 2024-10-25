@@ -21,7 +21,7 @@ class FeedbackView(LoginRequiredMixin, SuccessMessageMixin, FormView):
         return kwargs
 
     def form_valid(self, form):
-        user_info = _("\n\nsubmitted by: {user} ({email}) at {site}").format(user=self.request.user, email=self.request.user.email, site=settings.GET_SITE_URL()) if form.cleaned_data["attach_userinfo"] else _("anonymous")
+        user_info = _("\n\nsubmitted by: {user} ({email}) at {site}").format(user=self.request.user, email=self.request.user.email, site=settings.GET_SITE_URL()) if form.cleaned_data["attach_userinfo"] else ""
         path = "\n" + _("Path: ") + self.request.GET.get("from", "")
         send_mail_template(
             to=["support@ephios.de"],
