@@ -5,17 +5,24 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-24 23:21+0200\n"
-"Last-Translator: Julian Baumann <julian@ephios.de>\n"
+"POT-Creation-Date: 2024-10-28 10:11+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Felix Rindt <felix@ephios.de>\n"
+"Language-Team: \n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
 
-#: .\ephios_feedbackform\forms.py:7
+#: ephios_feedbackform/forms.py:8
+msgid "Attach user information"
+msgstr "Nutzerinformationen anhängen"
+
+#: ephios_feedbackform/forms.py:12
 msgid ""
 "Checking this box allows us to see who the feedback is from. This makes it "
 "possible for us to follow up with you if we have any questions. If you do "
@@ -25,13 +32,13 @@ msgstr ""
 "stammt.  So können wir uns mit Ihnen in Verbindung setzen, wenn wir Fragen "
 "haben. Andernfalls bleibt das Feedback anonym."
 
-#: .\ephios_feedbackform\signals.py:9
-#: .\ephios_feedbackform\templates\ephios_feedbackform\feedback_form.html:7
-#: .\ephios_feedbackform\views.py:28
+#: ephios_feedbackform/signals.py:10
+#: ephios_feedbackform/templates/ephios_feedbackform/feedback_form.html:7
+#: ephios_feedbackform/views.py:28
 msgid "Feedback"
 msgstr "Feedback"
 
-#: .\ephios_feedbackform\templates\ephios_feedbackform\feedback_form.html:11
+#: ephios_feedbackform/templates/ephios_feedbackform/feedback_form.html:11
 msgid ""
 "Did you experience problems or do you have suggestions for improvement? "
 "Please provide feedback on your experience with ephios. This helps us to "
@@ -41,15 +48,15 @@ msgstr ""
 "uns Feedback zu Ihrer Erfahrung mit ephios. Dies hilft uns, die Software zu "
 "verbessern und besseren Support zu bieten."
 
-#: .\ephios_feedbackform\templates\ephios_feedbackform\feedback_form.html:21
+#: ephios_feedbackform/templates/ephios_feedbackform/feedback_form.html:21
 msgid "Submit"
 msgstr "Abschicken"
 
-#: .\ephios_feedbackform\views.py:16
+#: ephios_feedbackform/views.py:16
 msgid "Feedback submitted successfully. Thanks for your help!"
 msgstr "Feedback erfolgreich übermittelt. Vielen Dank für Ihre Unterstützung!"
 
-#: .\ephios_feedbackform\views.py:24
+#: ephios_feedbackform/views.py:24
 #, python-brace-format
 msgid ""
 "\n"
@@ -60,10 +67,9 @@ msgstr ""
 "\n"
 "übermittelt von: {user} ({email}) auf {site}"
 
-#: .\ephios_feedbackform\views.py:24
-msgid "anonymous"
-msgstr "anonym"
+#: ephios_feedbackform/views.py:25
+msgid "Path"
+msgstr "Pfad"
 
-#: .\ephios_feedbackform\views.py:25
-msgid "Path: "
-msgstr "Pfad: "
+#~ msgid "anonymous"
+#~ msgstr "anonym"
