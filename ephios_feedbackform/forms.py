@@ -3,7 +3,7 @@ from django.utils.translation import gettext_lazy
 
 
 class FeedbackForm(forms.Form):
-    message = forms.CharField(widget=forms.Textarea, label="Message")
+    message = forms.CharField(widget=forms.Textarea, label=gettext_lazy("Message"))
     attach_userinfo = forms.BooleanField(
         label=gettext_lazy("Attach user information"),
         required=False,
