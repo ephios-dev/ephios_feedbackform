@@ -9,6 +9,7 @@ class PluginApp(PluginConfig):
         author = "Julian Baumann <julian@ephios.de>"
         description = "Feedback form for ephios"
         visible = False
+        force_enabled = True
 
     def ready(self):
         from . import signals  # NOQA
