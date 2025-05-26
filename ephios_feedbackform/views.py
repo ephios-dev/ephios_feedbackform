@@ -3,6 +3,8 @@ from django.contrib.messages.views import SuccessMessageMixin
 from django.urls import reverse_lazy
 from django.utils.translation import gettext_lazy as _
 from django.views.generic import FormView
+
+from ephios.core.dynamic import dynamic_settings
 from ephios.core.services.mail.send import send_mail_template
 from guardian.mixins import LoginRequiredMixin
 
@@ -21,7 +23,7 @@ class FeedbackView(LoginRequiredMixin, SuccessMessageMixin, FormView):
         return kwargs
 
     def form_valid(self, form):
-        user_info = _("\n\nsubmitted by: {user} ({email}) at {site}").format(user=self.request.user, email=self.request.user.email, site=settings.GET_SITE_URL()) if form.cleaned_data["attach_userinfo"] else ""
+        user_info = _("\n\nsubmitted by: {user} ({email}) at {site}").format(user=self.request.user, email=self.request.user.email, site=dynamic_settings.SITE_URL) if form.cleaned_data["attach_userinfo"] else ""
         path = "\n" + _("Path") + ": " + self.request.GET.get("from", "")
         send_mail_template(
             to=["support@ephios.de"],
